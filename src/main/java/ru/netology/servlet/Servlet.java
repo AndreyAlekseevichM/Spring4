@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class MainServlet extends HttpServlet {
+public class Servlet extends HttpServlet {
 
     private PostController controller;
     private static final String GET_METHOD = "GET";
@@ -18,6 +18,7 @@ public class MainServlet extends HttpServlet {
     public void init() {
         final var context = new AnnotationConfigApplicationContext("ru.netology");
         PostController postController = context.getBean(PostController.class);
+
     }
 
     @Override
